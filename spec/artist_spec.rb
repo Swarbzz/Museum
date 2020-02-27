@@ -2,7 +2,7 @@ require "artist"
 
 describe Artist do
   it "says the artist first and last names" do
-    subject(first_name, last_name)
-    expect(subject.full_name).to eq "#{first_name}, #{last_name}"
+    artist = Artist.new("George", "Swarbrick")
+    expect(artist.full_name).to eq "George Swarbrick"
   end
 end
